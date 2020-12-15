@@ -85,6 +85,7 @@ class product_window extends StatelessWidget {
                   padding: EdgeInsets.all(10),
                   child: Text(
                     '${product.description}',
+                    textAlign: TextAlign.justify,
                     style: TextStyle(
                         fontFamily: 'avenir',
                         fontSize: 18,
