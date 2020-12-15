@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 // import 'package:cake_v/controllers/productcontroller.dart';
 // import 'package:cake_v/views/product_tile.dart';
 
+// ignore: camel_case_types
 class product_window extends StatelessWidget {
   final Product product;
   const product_window(this.product);

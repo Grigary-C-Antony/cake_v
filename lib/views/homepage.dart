@@ -93,6 +93,7 @@ class HomePage extends StatelessWidget {
   }
 }
 
+// ignore: camel_case_types
 class map {
   // ignore: non_constant_identifier_names
   var Context;
