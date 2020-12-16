@@ -40,8 +40,9 @@ class _ProductTileState extends State<ProductTile> {
                     width: double.infinity,
                     clipBehavior: Clip.antiAlias,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(4),
-                        border: Border.all(color: Colors.blueAccent)),
+                      borderRadius: BorderRadius.circular(4),
+                      // border: Border.all(color: Colors.blueAccent)
+                    ),
                     child: Image.network(
                       widget.product.imageLink,
                       fit: BoxFit.cover,
@@ -75,7 +76,7 @@ class _ProductTileState extends State<ProductTile> {
               if (widget.product.rating != null)
                 Container(
                   decoration: BoxDecoration(
-                    color: colors[index],
+                    // color: colors[index],
                     borderRadius: BorderRadius.circular(12),
                   ),
                   padding:

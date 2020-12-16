@@ -1,4 +1,5 @@
 import 'package:cake_v/models/product.dart';
+import 'package:cake_v/views/auth/login.dart';
 // import 'package:cake_v/views/homepage.dart';
 import 'package:cake_v/views/shopping_cart.dart';
 import 'package:flutter/material.dart';
@@ -99,27 +100,36 @@ class product_window extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            // margin: EdgeInsets.all(5),
-            height: 60.0,
-            width: MediaQuery.of(context).size.width,
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Text(
-                "ADD TO CART",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'avenir',
-                    fontSize: 25,
-                    fontWeight: FontWeight.w900),
+          InkWell(
+            child: Container(
+              // margin: EdgeInsets.all(5),
+              height: 60.0,
+              width: MediaQuery.of(context).size.width,
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Text(
+                  "ADD TO CART",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Colors.black87,
+                      fontFamily: 'avenir',
+                      fontSize: 25,
+                      fontWeight: FontWeight.w900),
+                ),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.amber,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20)),
               ),
             ),
-            decoration: BoxDecoration(
-              color: Colors.amber,
-              borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(20), topRight: Radius.circular(20)),
-            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Login()),
+              );
+            },
           ),
         ],
       ),
